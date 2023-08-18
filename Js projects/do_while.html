@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <script>
+            var s=0,say;
+
+            /*
+            // en az bir kez işlem yapmasını istiyorsak bunu kullanabiliriz.
+            do{
+                s++;
+                document.write(s+ "<br>");
+            }while(s<5)
+            */
+
+            // do while 1-5 toplam
+            /*
+            var toplam=0;
+            do{
+                s++;
+                toplam+=s;
+                document.write("Sayaç : " + s + " || Anlık toplam : " + toplam + "<br>");
+
+            }while(s<20)
+            document.write("Toplam : " + toplam);
+            */
+
+            do{
+                say = Number(prompt("Lütfen bir pozitif sayı giriniz = ")); // eğer sayı değeri 0 dan küçük girersen tekrar girmek zorundasın loopa girer  
+            
+            }while(say<0)
+            kare = say*say;
+            document.write("Sayı : " + say + " || Sayının karesi : "+ kare);
+
+        </script>
+
+    </body>
+</html>

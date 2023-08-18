@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <script>
+            /*
+            //dizi oluşturma 1.yöntem 
+            var fener = ["Ahmet","Şener","Mahmut"];
+            
+            //dizi oluşturma 2.yöntem 
+            var hafta = new Array(7);
+            hafta[0]="Pazartesi";
+            hafta[1]="Salı";
+            hafta[2]="Çarşamba";
+            hafta[3]="Perşembe";
+            hafta[4]="Cuma";
+            hafta[5]="Cumartesi";
+            hafta[6]="Pazar";
+
+            //dizi oluşturma 3.yöntem 
+            var araba = new Array("BMW","Toyota","Scoda","Ferrari");
+            var rakamlar = new Array(1,2,3,4,5,6);
+
+            document.write(hafta + "<br>"); // diziyi yazdırdık
+
+            document.write("Haftanın 7.günü : "+ hafta[6]+ "<br>"); // 7.elemanı  yazdırdık
+
+            var arkadaslar=new Array(4);
+            //arkadaslar[0]=prompt("0.indexli elemanı giriniz : ");
+            //arkadaslar[1]=prompt("1.indexli elemanı giriniz : ");
+            //arkadaslar[2]=prompt("2.indexli elemanı giriniz : ");
+            //arkadaslar[3]=prompt("3.indexli elemanı giriniz : ");
+
+            for(var i=0;i<5;i++)
+                arkadaslar[i]=prompt(i + ".indexli elemanı giriniz : ");
+           
+           
+            // document.write("Arkadaş diziniz : " + arkadaslar + "<br>");
+
+            
+            for(var i=0;i<5;i++)
+                document.write(arkadaslar[i] + "<br>");
+
+            */
+
+            //degiskenleri olustur
+            var dizitoplami=0, ortalama=0;
+            var dizi=new Array (5);
+            //diziye elemanlaran aldam
+            for(var i=0; i<5; i++)
+            dizi[i]=Number(prompt (i+". sayı:"));   
+            //dizi toplama
+            for(var i=0; i<5; i++)
+            dizitoplami=dizitoplami+dizi[i];
+            //dizi ortalama
+            ortalama=dizitoplami/5;
+
+            //ortalama yaz
+            document.write("ortalama="+ortalama);
+        </script>
+
+    </body>
+</html>

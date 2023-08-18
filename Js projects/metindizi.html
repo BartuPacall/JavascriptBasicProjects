@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <script>
+            //diziyi tanimlayalim
+            var kelime=new Array();
+            //Kelimeyi okuyalim ve büyük harfe çevirelim
+            kelime=prompt ("Kelime giriniz:");
+            kelime=kelime.toUpperCase();
+            //Dizi/Kelime elemanlarini ekrana alt alta yazalim
+            var boyut=kelime.length;
+            document.write("Kelime Düz Aşağıya Doğru :<br>");
+            for (var i=0; i<boyut; i++)
+                document.write (kelime[i]+"<br>");
+            //Karakterleri tersten yazalim
+            document.write("Kelime Ters Aşağıya Doğru: :<br>");
+            for (var i=boyut-1; i>=0; i--)
+                document.write (kelime [i]+"<br>");
+
+
+        </script>
+
+    </body>
+</html>

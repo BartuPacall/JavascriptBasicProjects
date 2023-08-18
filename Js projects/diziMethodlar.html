@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <script>
+            var sayilar=[1,5,4,3,2,6];
+            document.write("Dizi : " +sayilar+"<br>");
+            document.write("Eleman sayısı : "+ sayilar.length); // dizideki eleman sayısı
+            sayilar.sort(); // diziyi sıralar
+            document.write("<br>"+"Dizi : " + sayilar); 
+            sayilar.reverse(); // diziyi ters çevirir
+            document.write("<br>"+"Ters sayılar :"+sayilar);
+            sayilar.unshift(7); // dizinin başına eleman ekler
+            document.write("<br>"+"Yeni dizi : "+sayilar);
+            document.write("<br>"+sayilar.shift()); // dizinin ilk elemanını döndürür ve siler
+            document.write("<br>"+sayilar);
+            document.write("<br>"+sayilar.pop()); // dizinin son elemanını döndürür ve siler
+            document.write(sayilar.indexOf(12)); // elemanın dizideki konumunu gösterir
+            document.write(sayilar.toString()); // dizi elemanlarını string/metin olarak döndürür
+
+        </script>
+
+    </body>
+</html>

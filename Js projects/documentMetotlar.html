@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1 id="manset">İlk Manşet</h1>
+        <p id="paragraf"></p>
+        <p id="ikinci"></p>
+        <img src="pp.png" width="800px" id="Kedi" onmouseover="cizmelikedi()"  onmouseout="kedi()">
+        <script>
+            // içerik değiştirme
+            document.getElementById("manset").innerHTML="|| First Manşet ||";
+
+            // inner html ile text arasındaki fark htmlde htmlin tırnak içindeki kodlarınıda sayıyor ama textte sadece yazı olarak alıyor
+
+            document.getElementById("paragraf").innerHTML="<b>|| First Paragraf ||</b>"; 
+            document.getElementById("ikinci").innerText="<i>İkinci paragraf...</i>";
+
+
+            //görselleştirme 
+
+            document.getElementById("manset").style.color="Purple";
+            document.getElementById("manset").style.fontFamily="Verdana";
+            
+            // özellik değiştirme
+
+            var kkedi=document.getElementById("Kedi");
+
+            function kedi(){
+                kkedi.src="pp.png";
+
+
+            }
+
+            function cizmelikedi(){
+                kkedi.src="tt.png";
+            }
+
+
+
+        </script>
+
+    </body>
+</html>

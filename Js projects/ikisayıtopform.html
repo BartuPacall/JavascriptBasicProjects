@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>İki Sayının Toplamı</title>
+    </head>
+    <body>
+        Sayı1:<input type="text" id="sayi1">
+        Sayi2:<input type="text" id="sayi2">
+        <input type="button" value="Hesapla" onclick="hesapla()">
+        İşlem Sonuçları:<span id="sonuc"></span>
+        <script>
+            function hesapla(){
+                var say1,say2,toplam; // degiskenler alındı
+
+                say1=Number(document.getElementById("sayi1").value); // yazılan değerlerimizi okuduk
+                say2=Number(document.getElementById("sayi2").value);
+
+                toplam=say1+say2; // hesap kısmımları
+                ort=toplam/2;
+
+                document.getElementById("sonuc").innerHTML=" Toplam:"+toplam + " || Ortalama : " + ort; // yazdırdık ekrana
+            }
+
+
+        </script>
+
+    </body>
+</html>

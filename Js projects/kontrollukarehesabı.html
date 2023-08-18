@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body onload="odaklan()">
+        Sayı:<input type="text" id="sayi">
+        <input type="button" value="Hesapla" onclick="karesi()"><br><br>
+        Karesi=<span id="sonuc"></span>
+        
+        <script>
+            function karesi(){
+                // degiskenler 
+                var sayi,karesi;
+                
+                // Forma girilen sayıyı okuduk
+                sayi=Number(document.getElementById("sayi").value);
+                
+                //değer kontrol kısmı boş mu? 0 dan büyük mü ?
+                if(sayi==""){
+                    alert("Boş bırakılamaz lütfen değer giriniz!!!");
+                    document.getElementById("sayi").style.backgroundColor="red";
+                    document.getElementById("sayi").focus();
+                }
+                else{
+                    if(sayi<0){
+                        alert("Sayı 0 dan küçük olamaz!!!");
+                        document.getElementById("sayi").style.backgroundColor="red";
+                        document.getElementById("sayi").focus();
+                    }
+                    else{
+                         //hesap
+                        karesi=sayi*sayi;
+
+                        //sonuc bastir
+                        document.getElementById("sonuc").innerHTML=karesi;
+                        document.getElementById("sayi").style.backgroundColor="lightgreen";
+                        document.getElementById("sayi").focus();
+                    }
+                }
+               
+            }
+
+            function odaklan(){
+                document.getElementById("sayi").style.backgroundColor="yellow";
+                document.getElementById("sayi").focus();
+            }
+
+
+        </script>
+
+    </body>
+</html>

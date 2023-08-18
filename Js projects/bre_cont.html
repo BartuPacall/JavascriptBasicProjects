@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            
+            /*
+            for(i=1;i<=5;i++){
+                document.write("i = " + i + "<br>");
+                if(i==3) break; // döngüyü sonlandır
+               // if(i==3) continue; // döngüyü atla
+            }
+             // döngüyü durdurucak bir komut yoksa sonsuz döngü , döngü yanlışsa ölü döngü x<y y=5 x10 mesela
+            */
+
+            var i=0,n,toplam=0;
+            n = Number(prompt("n sayısını giriniz : "));
+            do{
+                document.write("Do-While <br>");
+                i++;
+                toplam+=i;
+                document.write("i = " + i + "<br>" );
+            }while(i<n)
+            document.write("Toplam : " + toplam+"<br>");
+
+            total=0;
+            for(i=1;i<=n;i++){
+                total+=i;
+                document.write("For Döngüsü <br>");
+                document.write("i = " + i + "<br>");
+            }
+            document.write("Toplam : " + total +"<br>");
+
+            i=0,tpl=0;
+            while(i<n){
+                document.write("While döngüsü <br>");
+                i++;
+                document.write("i = " + i + "<br>");
+                tpl+=i;
+            }
+            document.write("Toplam : " + tpl+"<br>");
+        </script>
+
+    </body>
+</html>

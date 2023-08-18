@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        Sayı:<input type="text" id="sayi">
+        <input type="button" value="Hesapla" onclick="karesi()"><br><br>
+        Karesi=<span id="sonuc"></span>
+        
+        <script>
+            function karesi(){
+                // degiskenler 
+                var sayi,karesi;
+                // Forma girilen sayıyı okuduk
+                sayi=Number(document.getElementById("sayi").value);
+                //hesap
+                karesi=sayi*sayi;
+
+                //sonuc bastir
+                document.getElementById("sonuc").innerHTML=karesi;
+            }
+
+
+        </script>
+
+    </body>
+</html>

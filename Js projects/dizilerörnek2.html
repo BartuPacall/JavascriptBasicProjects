@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <script>
+            //dizi tanimla
+            var sayilar=new Array();
+
+            //dizinin eleman sayısı
+            var n=Number(prompt("Dizi eleman sayısını giriniz : "));
+
+            //dizi elemanlarini oku
+            for (var i=0; i<n; i++)
+                sayilar[i]=Number(prompt(i+" indisli dizi elemanı:"));
+            
+            //diziyi yaz
+            // document.write(sayilar);
+
+            var toplam=0,ort=0;
+            //toplamı ve ort bul
+            for(var i=0;i<n;i++){
+                toplam=toplam+sayilar[i];
+                
+            }
+            ort=toplam/n; // ort hesabı
+
+            // bildirim sekmesine yaz
+            alert("Ortalama : " +ort );
+            document.write("Ortalama : " +ort );
+        </script>
+
+    </body>
+</html>
